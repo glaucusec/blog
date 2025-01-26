@@ -1,4 +1,4 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Abishek'
-theme = 'hugo-blog-awesome'
+theme = 'PaperMod'
