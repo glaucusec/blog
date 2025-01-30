@@ -59,7 +59,7 @@ export default function RootLayout({
 - Here I need the inter font to be applied on my entire nextjs application. we are adding the taiwind generated classname of the `inter` font.
 - But for poppins I want the font to be loaded as a CSS variable
 
-### Adding CSS Variable
+## Adding CSS Variable
 
 - Notice on the `fonts.ts` file we have provided a `variable` name. we can use that on the `globals.css`
 - On tailwind v4, they removed the config file and everything is simple and can be added from `globals.css` itself.
