@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Web-Performance | glaucusec</title>
-<meta name="keywords" content="">
-<meta name="description" content="">
-<meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/tags/web-performance/">
+<title>How to Move Commits to a New Branch in Git | glaucusec</title>
+<meta name="keywords" content="git">
+<meta name="description" content="f you accidentally committed changes to the wrong branch (e.g., `release/dev`) and meant to commit them to a new branch instead, don’t worry! Here’s a step-by-step guide to fix this issue.">
+<meta name="author" content="glaucusec">
+<link rel="canonical" href="http://localhost:1313/posts/how-to-move-commits-to-a-new-branch/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,8 +18,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/web-performance/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/web-performance/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/how-to-move-commits-to-a-new-branch/">
 <noscript>
     <style>
         #theme-toggle,
@@ -59,7 +58,7 @@
 </noscript>
 </head>
 
-<body class="list" id="top">
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -102,23 +101,97 @@
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<header class="page-header">
-  <h1>
-    Web-Performance
-  </h1>
-</header>
+<main class="main">
 
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Using Google Fonts with @next/font in Tailwind CSS v4
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>A step-by-step guide on adding and configuring Google Fonts in Tailwind CSS v4 with @next/font in Next.js.</p>
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      How to Move Commits to a New Branch in Git
+    </h1>
+    <div class="post-description">
+      f you accidentally committed changes to the wrong branch (e.g., `release/dev`) and meant to commit them to a new branch instead, don’t worry! Here’s a step-by-step guide to fix this issue.
+    </div>
+    <div class="post-meta"><span title='2025-03-13 00:00:00 +0000 UTC'>March 13, 2025</span>&nbsp;·&nbsp;glaucusec
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#how-to-move-commits-to-a-new-branch-in-git" aria-label="How to Move Commits to a New Branch in Git">How to Move Commits to a New Branch in Git</a><ul>
+                        
+                <li>
+                    <a href="#1-create-a-new-branch-to-save-your-changes" aria-label="1. Create a New Branch to Save Your Changes">1. Create a New Branch to Save Your Changes</a></li>
+                <li>
+                    <a href="#2-reset-the-original-branch" aria-label="2. Reset the Original Branch">2. Reset the Original Branch</a></li>
+                <li>
+                    <a href="#3-force-push-the-original-branch-if-needed" aria-label="3. Force-Push the Original Branch (If Needed)">3. Force-Push the Original Branch (If Needed)</a></li>
+                <li>
+                    <a href="#4-push-your-new-branch" aria-label="4. Push Your New Branch">4. Push Your New Branch</a></li>
+                <li>
+                    <a href="#summary" aria-label="Summary">Summary</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="how-to-move-commits-to-a-new-branch-in-git">How to Move Commits to a New Branch in Git<a hidden class="anchor" aria-hidden="true" href="#how-to-move-commits-to-a-new-branch-in-git">#</a></h1>
+<p>If you accidentally committed changes to the wrong branch (e.g., release/dev) and meant to commit them to a new branch instead, don’t worry! Here’s a step-by-step guide to fix this issue.</p>
+<h2 id="1-create-a-new-branch-to-save-your-changes">1. Create a New Branch to Save Your Changes<a hidden class="anchor" aria-hidden="true" href="#1-create-a-new-branch-to-save-your-changes">#</a></h2>
+<p>Save your current work by creating a new branch from your current state:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git checkout -b new-branch-name
+</span></span></code></pre></div><p>Replace <code>new-branch-name</code> with your desired branch name.</p>
+<h2 id="2-reset-the-original-branch">2. Reset the Original Branch<a hidden class="anchor" aria-hidden="true" href="#2-reset-the-original-branch">#</a></h2>
+<p>Now that your changes are safely in the new branch, reset the original branch (<code>release/dev</code>) to its state before your commit.</p>
+<p>First, find the commit hash of the last commit before your changes:</p>
+<pre tabindex="0"><code>git log
+</code></pre><p>Then, reset the branch:</p>
+<pre tabindex="0"><code>git checkout release/dev
+git reset --hard &lt;commit-hash&gt;
+</code></pre><p>Replace <!-- raw HTML omitted --> with the actual commit hash.</p>
+<h2 id="3-force-push-the-original-branch-if-needed">3. Force-Push the Original Branch (If Needed)<a hidden class="anchor" aria-hidden="true" href="#3-force-push-the-original-branch-if-needed">#</a></h2>
+<p>If you’ve already pushed the changes to the remote release/dev branch, you’ll need to force-push the reset branch:</p>
+<pre tabindex="0"><code>git push --force origin release/dev
+</code></pre><p>⚠️ Caution: Force-pushing overwrites the remote branch history, so use it carefully.</p>
+<h2 id="4-push-your-new-branch">4. Push Your New Branch<a hidden class="anchor" aria-hidden="true" href="#4-push-your-new-branch">#</a></h2>
+<p>Finally, push your new branch to the remote repository:</p>
+<pre tabindex="0"><code>git push -u origin new-branch-name
+</code></pre><h2 id="summary">Summary<a hidden class="anchor" aria-hidden="true" href="#summary">#</a></h2>
+<ol>
+<li>
+<p>Create a new branch to save your changes:
+<code>git checkout -b new-branch-name</code></p>
+</li>
+<li>
+<p>Reset the original branch to its previous state:
+<code>git checkout release/dev and git reset --hard &lt;commit-hash&gt;</code></p>
+</li>
+<li>
+<p>Force-push the original branch if needed:
+<code>git push --force origin release/dev</code></p>
+</li>
+<li>
+<p>Push your new branch:
+<code>git push -u origin new-branch-name</code></p>
+</li>
+</ol>
+
+
   </div>
-  <footer class="entry-footer"><span title='2025-01-30 00:00:00 +0000 UTC'>January 30, 2025</span>&nbsp;·&nbsp;glaucusec</footer>
-  <a class="entry-link" aria-label="post link to Using Google Fonts with @next/font in Tailwind CSS v4" href="http://localhost:1313/posts/using-google-fonts-in-nextjs/"></a>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/git/">Git</a></li>
+    </ul>
+  </footer>
 </article>
     </main>
     

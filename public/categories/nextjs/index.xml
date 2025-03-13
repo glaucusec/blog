@@ -6,13 +6,27 @@
     <description>Recent content in Nextjs on glaucusec</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/nextjs/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>How to Move Commits to a New Branch in Git</title>
+      <link>http://localhost:1313/posts/how-to-move-commits-to-a-new-branch/</link>
+      <pubDate>Thu, 13 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/how-to-move-commits-to-a-new-branch/</guid>
+      <description>f you accidentally committed changes to the wrong branch (e.g., `release/dev`) and meant to commit them to a new branch instead, don’t worry! Here’s a step-by-step guide to fix this issue.</description>
+    </item>
+    <item>
+      <title>Understanding Caching in Next.js 15</title>
+      <link>http://localhost:1313/posts/caching-in-nextjs/</link>
+      <pubDate>Thu, 13 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/caching-in-nextjs/</guid>
+      <description>Learn about Caching in Next.js 15</description>
+    </item>
+    <item>
       <title>Using Google Fonts with @next/font in Tailwind CSS v4</title>
-      <link>http://localhost:1313/posts/first/</link>
+      <link>http://localhost:1313/posts/using-google-fonts-in-nextjs/</link>
       <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/first/</guid>
+      <guid>http://localhost:1313/posts/using-google-fonts-in-nextjs/</guid>
       <description>Learn how to integrate and optimize Google Fonts in a Next.js project using @next/font with Tailwind CSS v4.</description>
     </item>
   </channel>

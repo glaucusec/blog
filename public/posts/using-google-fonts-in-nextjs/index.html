@@ -9,7 +9,7 @@
 <meta name="keywords" content="tailwindcss, nextjs, google-fonts, web-performance">
 <meta name="description" content="Learn how to integrate and optimize Google Fonts in a Next.js project using @next/font with Tailwind CSS v4.">
 <meta name="author" content="glaucusec">
-<link rel="canonical" href="http://localhost:1313/posts/first/">
+<link rel="canonical" href="http://localhost:1313/posts/using-google-fonts-in-nextjs/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/first/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/using-google-fonts-in-nextjs/">
 <noscript>
     <style>
         #theme-toggle,
@@ -125,13 +125,10 @@
                 <li>
                     <a href="#selecting-the-required-fonts" aria-label="Selecting the required fonts">Selecting the required fonts</a></li>
                 <li>
-                    <a href="#adding-the-fonts-to-layouttsx-file" aria-label="Adding the fonts to layout.tsx file">Adding the fonts to layout.tsx file</a><ul>
-                        
+                    <a href="#adding-the-fonts-to-layouttsx-file" aria-label="Adding the fonts to layout.tsx file">Adding the fonts to layout.tsx file</a></li>
                 <li>
                     <a href="#adding-css-variable" aria-label="Adding CSS Variable">Adding CSS Variable</a>
                 </li>
-            </ul>
-            </li>
             </ul>
         </div>
     </details>
@@ -180,7 +177,7 @@ On the other hand, <strong>Inter</strong> is a variable font, allowing it to ada
 <li>Here I need the inter font to be applied on my entire nextjs application. we are adding the taiwind generated classname of the <code>inter</code> font.</li>
 <li>But for poppins I want the font to be loaded as a CSS variable</li>
 </ul>
-<h3 id="adding-css-variable">Adding CSS Variable<a hidden class="anchor" aria-hidden="true" href="#adding-css-variable">#</a></h3>
+<h2 id="adding-css-variable">Adding CSS Variable<a hidden class="anchor" aria-hidden="true" href="#adding-css-variable">#</a></h2>
 <ul>
 <li>Notice on the <code>fonts.ts</code> file we have provided a <code>variable</code> name. we can use that on the <code>globals.css</code></li>
 <li>On tailwind v4, they removed the config file and everything is simple and can be added from <code>globals.css</code> itself.</li>
